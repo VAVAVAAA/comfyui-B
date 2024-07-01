@@ -2,5 +2,5 @@ aria2
 libgl1
 libglib2.0-0
 git-lfs
-lz4
+liblz4-tool        
 ffmpeg

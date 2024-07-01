@@ -9,4 +9,3 @@ os.system(f"git lfs install")
 os.system(f"git reset --hard")
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://download.openxlab.org.cn/models/camenduru/cyber-realistic/weight//cyberrealistic_v32.safetensors -d /home/xlab-app-center/ComfyUI/models/checkpoints/ -o cyberrealistic_v32.safetensors")
 os.system(f"python main.py --dont-print-server --preview-method auto --enable-cors-header --use-pytorch-cross-attention")
-##test                                  
