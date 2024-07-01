@@ -12,7 +12,8 @@ Pillow
 scipy
 tqdm
 psutil
-
+rembg
+numba
 #non essential dependencies:
 kornia>=0.7.1
 spandrel
