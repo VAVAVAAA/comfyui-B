@@ -1,7 +1,7 @@
+import os
 os.system("pip install py7zr")
 
 import py7zr
-import os
 os.chdir(f"/home/xlab-app-center")
 ui = "/home/xlab-app-center"
 ui_path = os.path.join(ui, "ComfyUI")
