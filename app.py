@@ -1,5 +1,5 @@
 import os
-import py7zr
+
 
 # 定义根目录路径
 root_dir = "/home/xlab-app-center"
