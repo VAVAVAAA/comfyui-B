@@ -1,12 +1,18 @@
+os.system("pip install py7zr")
+
+import py7zr
 import os
 os.chdir(f"/home/xlab-app-center")
 ui = "/home/xlab-app-center"
 ui_path = os.path.join(ui, "ComfyUI")
 os.makedirs(ui_path, exist_ok=True)
-os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://hf-mirror.com/datasets/Carmeninkunming/fast-repo-kaggle/resolve/main/cui-2024-8.tar.lz4?download=true -o cui.tar.lz4 && tar -xI lz4 -f cui.tar.lz4 --directory={ui_path} && rm {ui}/cui.tar.lz4")
+os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://github.com/comfyanonymous/ComfyUI/releases/download/v0.1.3/ComfyUI_windows_portable_nvidia.7z -o comfyUI.7z")
+# 解压文件
+with py7zr.SevenZipFile(archive_path, mode='r') as z:  # 使用 py7zr 打开下载的 7z 文件
+    z.extractall(path=ui_path)  # 解压所有文件到目标目录 ui_path 中
+# 删除下载的7z文件
+os.remove(archive_path)  # 删除下载的 7z 文件，以节省磁盘空间
 os.chdir(f"/home/xlab-app-center/ComfyUI")
 os.system(f"git lfs install")
 os.system(f"git reset --hard")
-os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://hf-mirror.com/LyliaEngine/Pony_Diffusion_V6_XL/resolve/main/ponyDiffusionV6XL_v6StartWithThisOne.safetensors -d /home/xlab-app-center/ComfyUI/models/checkpoints/ -o ponyDiffusionV6XL_v6StartWithThisOne.safetensors")
-os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://hf-mirror.com/LyliaEngine/Pony_Diffusion_V6_XL/resolve/main/sdxl_vae.safetensors -d /home/xlab-app-center/ComfyUI/models/vae/ -o sdxl_vae.safetensors")
 os.system(f"python main.py --dont-print-server --preview-method auto --enable-cors-header --use-pytorch-cross-attention")
