@@ -1,7 +1,7 @@
 import os
 import shutil
 #os.chdir(f"/home/xlab-app-center")
-os.system(f"git clone -b https://github.com/comfyanonymous/ComfyUI /home/xlab-app-center")
+os.system(f"git clone https://github.com/comfyanonymous/ComfyUI /home/xlab-app-center")
 os.system(f"git lfs install")
 # os.system(f"git reset --hard")
 os.system("pip install --upgrade transformers==4.44.2")
