@@ -1,7 +1,7 @@
 import os
 import shutil
 os.chdir(f"/home/xlab-app-center")
-os.system(f"git clone -b https://github.com/comfyanonymous/ComfyUI /home/xlab-app-center/ComfyUI")
+os.system(f"git clone -b https://github.com/comfyanonymous/ComfyUI /home/xlab-app-center")
 os.chdir(f"/home/xlab-app-center/ComfyUI")
 os.system(f"git lfs install")
 # os.system(f"git reset --hard")
