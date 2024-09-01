@@ -6,7 +6,7 @@ os.system(f"git lfs install")
 # os.system(f"git reset --hard")
 os.system("pip install --upgrade transformers==4.44.2")
 os.system("pip install --upgrade torch==2.1.0 torchvision==0.16.0")
-os.system("git pull https://github.com/comfyanonymous/ComfyUI.git main")
+# os.system("git pull https://github.com/comfyanonymous/ComfyUI.git main")
 
 os.system(f"git clone https://github.com/ltdrdata/ComfyUI-Manager ComfyUI/custom_nodes/ComfyUI-Manager")
 os.system(f"git clone https://github.com/ty0x2333/ComfyUI-Dev-Utils ComfyUI/custom_nodes/ComfyUI-Dev-Utils")
