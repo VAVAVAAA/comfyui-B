@@ -4,7 +4,7 @@ torchsde
 torchvision
 torchaudio
 einops
-transformers>=4.28.1
+transformers==4.44.2
 tokenizers>=0.13.3
 sentencepiece
 safetensors>=0.4.2
@@ -20,3 +20,12 @@ kornia>=0.7.1
 spandrel
 soundfile
 pyOpenSSL
+
+# 插件依赖
+aiohttp_sse
+segment_anything
+opencv-python
+transparent_background
+rembg
+piexif
+accelerate>=0.25.0
