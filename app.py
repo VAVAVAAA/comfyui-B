@@ -32,7 +32,7 @@ os.system(f"git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite Co
 os.system(f"git clone https://gitcode.com/gh_mirrors/co/ComfyUI-Allor ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-Allor") # 硬件性能检测
 os.system(f"git clone https://github.com/StartHua/Comfyui_CXH_joy_caption  ComfyUI/home/xlab-app-center/custom_nodes/Comfyui_CXH_joy_caption") # 支持多个视觉反推模型
 
-os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors?download=true -d ComfyUI/models/checkpoints -o flux1-dev-fp8.safetensors")
+# os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors?download=true -d ComfyUI/models/checkpoints -o flux1-dev-fp8.safetensors")
 # os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://civitai.com/api/download/models/782002 -d ComfyUI/models/checkpoints -o Jugg_Xl_by_RunDiffusion.safetensors")
 # os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://download.openxlab.org.cn/models/ninjawick/realistic-vision-5.1/weight//Realistic_Vision_V6.0_NV_B1_inpainting.safetensors -d ComfyUI/models/checkpoints -o Realistic_Vision_V6.0_NV_B1_inpainting.safetensors")
 # lora
@@ -41,7 +41,7 @@ os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=fa
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-LoRA-blended-realistic-illustration/resolve/main/FLUX-dev-lora-blended_realistic_illustration.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o A_写实插画结合_flux.safetensors")
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-LoRA-add-details/resolve/main/FLUX-dev-lora-add_details.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o FLUX-dev-lora-add_details增加细节.safetensors")
 # controlnet
-os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/controlnet -o FLUX.1-dev-ControlNet-Union-Pro.safetensors")
+# os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/controlnet -o FLUX.1-dev-ControlNet-Union-Pro.safetensors")
 # 反推模型
 os.system("huggingface-cli download --resume-download google/siglip-so400m-patch14-384 --local-dir /home/xlab-app-center/models/clip/siglip-so400m-patch14-384")
 os.system("ls /home/xlab-app-center/ComfyUI")
