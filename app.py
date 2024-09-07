@@ -9,7 +9,7 @@ os.system("pip install --upgrade torch==2.1.0 torchvision==0.16.0")
 os.environ["HF_ENDPOINT"] = "https://hf-mirror.com"
 os.system("pip install --upgrade huggingface_hub")
 
-os.system(f"git clone https://github.com/ltdrdata/ComfyUI-Manager ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-Manager")
+os.system(f"git clone https://github.hscsec.cn/ltdrdata/ComfyUI-Manager.git ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-Manager")
 os.system(f"git clone https://github.com/ty0x2333/ComfyUI-Dev-Utils ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-Dev-Utils") # 显示节点运行时间
 os.system(f"git clone https://github.com/Nuked88/ComfyUI-N-Sidebar ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-N-Sidebar")
 os.system(f"git clone https://github.com/AIGODLIKE/AIGODLIKE-ComfyUI-Translation ComfyUI/home/xlab-app-center/custom_nodes/AIGODLIKE-ComfyUI-Translation")
