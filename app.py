@@ -1,6 +1,7 @@
 import os
 import shutil
-os.system(f"git clone https://github.com/comfyanonymous/ComfyUI")
+
+os.system(f"git clone https://github.hscsec.cn/comfyanonymous/ComfyUI.git")
 os.system(f"git lfs install")
 # os.system(f"git reset --hard")
 os.system("pip install --upgrade transformers==4.44.2")
@@ -37,13 +38,14 @@ os.system(f"git clone https://github.com/StartHua/Comfyui_CXH_joy_caption  Comfy
 # os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://download.openxlab.org.cn/models/ninjawick/realistic-vision-5.1/weight//Realistic_Vision_V6.0_NV_B1_inpainting.safetensors -d ComfyUI/models/checkpoints -o Realistic_Vision_V6.0_NV_B1_inpainting.safetensors")
 # lora
 # os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/ByteDance/Hyper-SD/resolve/main/Hyper-FLUX.1-dev-16steps-lora.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o Hyper-FLUX.1-dev-16steps-lora.safetensors")
-os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/ByteDance/Hyper-SD/resolve/main/Hyper-FLUX.1-dev-8steps-lora.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o Hyper-FLUX.1-dev-8steps-lora.safetensors")
-os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-LoRA-blended-realistic-illustration/resolve/main/FLUX-dev-lora-blended_realistic_illustration.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o A_写实插画结合_flux.safetensors")
-os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-LoRA-add-details/resolve/main/FLUX-dev-lora-add_details.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o FLUX-dev-lora-add_details增加细节.safetensors")
+#os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/ByteDance/Hyper-SD/resolve/main/Hyper-FLUX.1-dev-8steps-lora.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o Hyper-FLUX.1-dev-8steps-lora.safetensors")
+#os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-LoRA-blended-realistic-illustration/resolve/main/FLUX-dev-lora-blended_realistic_illustration.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o A_写实插画结合_flux.safetensors")
+#os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-LoRA-add-details/resolve/main/FLUX-dev-lora-add_details.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/loras -o FLUX-dev-lora-add_details增加细节.safetensors")
 # controlnet
 # os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Shakker-Labs/FLUX.1-dev-ControlNet-Union-Pro/resolve/main/diffusion_pytorch_model.safetensors?download=true -d ComfyUI/home/xlab-app-center/models/controlnet -o FLUX.1-dev-ControlNet-Union-Pro.safetensors")
 # 反推模型
-os.system("huggingface-cli download --resume-download google/siglip-so400m-patch14-384 --local-dir /home/xlab-app-center/models/clip/siglip-so400m-patch14-384")
+#os.system("huggingface-cli download --resume-download google/siglip-so400m-patch14-384 --local-dir /home/xlab-app-center/models/clip/siglip-so400m-patch14-384")
+
 os.system("ls /home/xlab-app-center/ComfyUI")
 #os.system("ls /home/xlab-app-center/")
 os.chdir(f"/home/xlab-app-center/ComfyUI")
