@@ -30,7 +30,7 @@ os.system(f"git clone https://github.hscsec.cn/ssitu/ComfyUI_UltimateSDUpscale C
 
 os.system(f"git clone https://github.hscsec.cn/cubiq/ComfyUI_IPAdapter_plus ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI_IPAdapter_plus")
 os.system(f"git clone https://github.hscsec.cn/Kosinkadink/ComfyUI-VideoHelperSuite ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-VideoHelperSuite")
-os.system(f"git clone https://gitcode.hscsec.cn/gh_mirrors/co/ComfyUI-Allor ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-Allor") # 硬件性能检测
+os.system(f"git clone https://gitcode.com/gh_mirrors/co/ComfyUI-Allor ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-Allor") # 硬件性能检测
 os.system(f"git clone https://github.hscsec.cn/StartHua/Comfyui_CXH_joy_caption  ComfyUI/home/xlab-app-center/custom_nodes/Comfyui_CXH_joy_caption") # 支持多个视觉反推模型
 
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors?download=true -d ComfyUI/models/checkpoints -o flux1-dev-fp8.safetensors")
