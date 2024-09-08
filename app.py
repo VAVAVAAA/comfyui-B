@@ -33,6 +33,7 @@ os.system(f"git clone https://git.homegu.com/cubiq/ComfyUI_IPAdapter_plus ComfyU
 os.system(f"git clone https://git.homegu.com/Kosinkadink/ComfyUI-VideoHelperSuite ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-VideoHelperSuite")
 os.system(f"git clone https://git.homegu.com/Nourepide/ComfyUI-Allor ComfyUI/home/xlab-app-center/custom_nodes/ComfyUI-Allor") # 硬件性能检测
 os.system(f"git clone https://git.homegu.com/StartHua/Comfyui_CXH_joy_caption  ComfyUI/home/xlab-app-center/custom_nodes/Comfyui_CXH_joy_caption") # 支持多个视觉反推模型
+os.system(f"git clone https://git.homegu.com/miaoshouai/ComfyUI-Miaoshouai-Tagger /home/xlab-app-center/custom_nodes/ComfyUI-Miaoshouai-Tagger") # 全新的视觉反推模型，显存更小
 
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://download.openxlab.org.cn/repos/file/mofashi/comfy/main?filepath=flux1-dev-fp8.safetensors&sign=071a1a24fac222d47b1ea471c6bd8f7f&nonce=1725718046851 -d ComfyUI/models/checkpoints -o flux1-dev-fp8.safetensors")
 #os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://hf-mirror.com/Comfy-Org/flux1-dev/resolve/main/flux1-dev-fp8.safetensors?download=true -d ComfyUI/models/checkpoints -o flux1-dev-fp8.safetensors")
