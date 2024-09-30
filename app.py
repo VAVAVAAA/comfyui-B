@@ -17,7 +17,7 @@ os.system("pip install -U openxlab")
 openxlab.login(ak='xa5ag8yyvwpqkxw839pw', sk='l8njwnadbjgdwxe1zn83olme31xpparlo2q7vkmo')
 
 os.chdir("/home/xlab-app-center")
-os.system(f"git clone https://git.homegu.com/comfyanonymous/ComfyUI")
+os.system(f"git clone https://github.com/comfyanonymous/ComfyUI")
 
 # 依赖
 os.system("pip install aiohttp_sse")
