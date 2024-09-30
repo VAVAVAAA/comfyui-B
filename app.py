@@ -29,6 +29,7 @@ os.system("pip install piexif")
 os.system("pip install accelerate>=0.25.0")
 os.system("pip install blend_modes")
 os.system("pip install diffusers")
+os.system("pip install insightface")
 
 # 插件
 os.system(f"git clone https://git.homegu.com/ltdrdata/ComfyUI-Manager /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Manager")
