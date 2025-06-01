@@ -38,8 +38,6 @@ os.system(f"git clone https://git.homegu.com/Nuked88/ComfyUI-N-Sidebar /home/xla
 os.system(f"git clone https://git.homegu.com/AIGODLIKE/AIGODLIKE-ComfyUI-Translation /home/xlab-app-center/ComfyUI/custom_nodes/AIGODLIKE-ComfyUI-Translation")
 os.system(f"git clone https://git.homegu.com/rgthree/rgthree-comfy /home/xlab-app-center/ComfyUI/custom_nodes/rgthree-comfy")
 
-os.system(f"git clone https://git.homegu.com/MinusZoneAI/ComfyUI-Kolors-MZ /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Kolors-MZ") # 可图
-os.system(f"git clone https://git.homegu.com/SeaArtLab/comfyui_storydiffusion /home/xlab-app-center/ComfyUI/custom_nodes/comfyui_storydiffusion") # 可图
 #os.system(f"git clone https://git.homegu.com/yolain/ComfyUI-Easy-Use /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Easy-Use")
 os.system(f"git clone https://git.homegu.com/VAVAVAAA/ComfyUI-Easy-Use-A /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Easy-Use-A") # 自己fork仓库的
 #os.system(f"git clone https://git.homegu.com/xinsir6/ControlNetPlus /home/xlab-app-center/ComfyUI/custom_nodes/ControlNetPlus") # 全能xl调用
@@ -57,7 +55,6 @@ os.system(f"git clone https://git.homegu.com/Kosinkadink/ComfyUI-VideoHelperSuit
 os.system(f"git clone https://git.homegu.com/Nourepide/ComfyUI-Allor /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Allor") # 硬件性能检测
 os.system(f"git clone https://git.homegu.com/StartHua/Comfyui_CXH_joy_caption  /home/xlab-app-center/ComfyUI/custom_nodes/Comfyui_CXH_joy_caption") # 支持多个视觉反推模型
 os.system(f"git clone https://git.homegu.com/miaoshouai/ComfyUI-Miaoshouai-Tagger /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Miaoshouai-Tagger") # 全新的视觉反推模型，显存更小
-os.system(f"git clone https://git.homegu.com/siliconflow/BizyAir /home/xlab-app-center/ComfyUI/custom_nodes/BizyAir") # 满血版反推
 
 os.system(f"git clone https://git.homegu.com/pythongosssss/ComfyUI-Custom-Scripts /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Custom-Scripts")
 os.system(f"git clone https://git.homegu.com/melMass/comfy_mtb /home/xlab-app-center/ComfyUI/custom_nodes/comfy_mtb")
@@ -69,15 +66,10 @@ os.system(f"git clone https://git.homegu.com/ssitu/ComfyUI_UltimateSDUpscale /ho
 
 os.system(f"git clone https://git.homegu.com/M1kep/ComfyLiterals /home/xlab-app-center/ComfyUI/custom_nodes/ComfyLiterals") # 字符串节点
 os.system(f"git clone https://git.homegu.com/lquesada/ComfyUI-Inpaint-CropAndStitch /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Inpaint-CropAndStitch") # 重绘
-os.system(f"git clone https://git.homegu.com/erosDiffusion/ComfyUI-enricos-nodes /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-enricos-nodes") # 自定义构图
 os.system(f"git clone https://git.homegu.com/WASasquatch/was-node-suite-comfyui /home/xlab-app-center/ComfyUI/custom_nodes/was-node-suite-comfyui") 
 os.system(f"git clone https://git.homegu.com/Fannovel16/ComfyUI-Frame-Interpolation /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Frame-Interpolation") # 视频补帧
-os.system(f"git clone https://git.homegu.com/MinusZoneAI/ComfyUI-CogVideoX-MZ /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-CogVideoX-MZ") # 图生视频
-os.system(f"git clone https://git.homegu.com/kijai/ComfyUI-CogVideoXWrapper /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-CogVideoXWrapper") # 图生视频，与上面搭配使用
-os.system(f"git clone https://git.homegu.com/TTPlanetPig/Comfyui_TTP_Toolset /home/xlab-app-center/ComfyUI/custom_nodes/Comfyui_TTP_Toolset") # flux放大
-os.system(f"git clone https://git.homegu.com/kijai/ComfyUI-Florence2 /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Florence2")
-os.system(f"git clone https://git.homegu.com/shiimizu/ComfyUI-PhotoMaker-Plus /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-PhotoMaker-Plus") # 换脸
-os.system(f"git clone https://git.homegu.com/cubiq/ComfyUI_InstantID /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI_InstantID") # 换脸
+
+os.system(f"git clone https://git.homegu.com/smthemex/ComfyUI_DiffuEraser /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI_DiffuEraser") #视频去水印
 
 
 # 大模型
@@ -89,30 +81,20 @@ os.system(f"git clone https://git.homegu.com/cubiq/ComfyUI_InstantID /home/xlab-
  ]]
 
 # unet模型
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/unet/{file_name}') 
- for file_name in [
-     'ketu_fp16.safetensors', 
-     'CogVideoX_5b_fun_GGUF_Q4_0.safetensors',
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/unet/{file_name}') 
+#  for file_name in [
+#      'ketu_fp16.safetensors', 
+#      'CogVideoX_5b_fun_GGUF_Q4_0.safetensors',
      
- ]]
+#  ]]
 # lora
 [download(dataset_repo='mofashi/comfy', 
           source_path=file_name, 
           target_path=f'/home/xlab-app-center/ComfyUI/models/loras/{file_name}') 
  for file_name in [
-     'Hyper-FLUX.1-dev-8steps-lora.safetensors', 
-     'xl_99art写实摄影·光影光斑光晕增强.safetensors',
-     '绘梦摄影Flux复古胶片摄影时尚写真电影质感.safetensors',
-     '墨幽-F.1-Lora-网图-MYH-1.1.safetensors',
-     '墨幽Flux-Lora-网图.safetensors',
-     'flux_realism_lora-写实主义.safetensors',
-     'Flux_小红书真实风格.safetensors',
-     '万物调FluxTexture质感增强器06.safetensors',
-     'ASKOLORS可图绘风.safetensors',
-     'ASKOLORS绘本插画风格.safetensors',
-     'kolors国风描金插画.safetensors'
+    'pcm_sd15_smallcfg_2step_converted.safetensors'
  ]]
 # vae
 [download(dataset_repo='mofashi/comfy', 
@@ -234,19 +216,25 @@ os.chdir(f"/home/xlab-app-center/ComfyUI/models/checkpoints") #模型仓库，�
 #subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/MYHuman-%E5%A2%A8%E5%B9%BD%E4%BA%BA%E9%80%A0%E4%BA%BAXL_v2010-Flux-RF.safetensors?ref=main&nonce=1726399393393 -o MYHuman-墨幽人造人XL-v2010-Flux-RF.safetensors",shell=True)
 
 os.chdir(f"/home/xlab-app-center/ComfyUI/models/unet") # 模型仓库，unet文件夹
-subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/flux1-dev-fp8原始.safetensors?ref=main&nonce=1725931610381 -o flux1-dev-fp8原始.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('flux1-dev-fp8原始下载完成')
+#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/flux1-dev-fp8原始.safetensors?ref=main&nonce=1725931610381 -o flux1-dev-fp8原始.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('flux1-dev-fp8原始下载完成')
 # subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/MYHuman-Flux%E5%8E%9F%E9%9A%8F%E6%8B%8D-fp16-1.1.safetensors?ref=main&nonce=1726185742539 -o MYHuman-Flux原随拍-fp16-1.1.safetensors",shell=True)
-subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/MYHuman-F.1-%E5%8E%9F%E5%A2%A8%E5%B9%BD%E9%9A%8F%E6%8B%8D-v1-%E9%9A%8F%E6%8B%8D.safetensors?ref=main&nonce=1726204698330 -o MYHuman-F.1-原墨幽随拍-v1-随拍.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('原墨幽随拍-v1-随拍下载完成')
+#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/MYHuman-F.1-%E5%8E%9F%E5%A2%A8%E5%B9%BD%E9%9A%8F%E6%8B%8D-v1-%E9%9A%8F%E6%8B%8D.safetensors?ref=main&nonce=1726204698330 -o MYHuman-F.1-原墨幽随拍-v1-随拍.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('原墨幽随拍-v1-随拍下载完成')
 # subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/CogVideoX_5b_fp8_4em.safetensors?ref=main&nonce=1726813815633 -o CogVideoX_5b_fp8_4em.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('CogVideoX_5b_fp8_4em下载完成')
 
 
 os.chdir(f"/home/xlab-app-center/ComfyUI/models/loras") #模型仓库，lora文件夹
-subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/%E7%AD%91%E6%A2%A6F.1_INS%E6%BB%A4%E9%95%9C_v1.0.safetensors?ref=main&nonce=1726186206302 -o 筑梦F.1_INS滤镜_v1.0.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('筑梦F.1_INS滤镜下载完成')
+#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/%E7%AD%91%E6%A2%A6F.1_INS%E6%BB%A4%E9%95%9C_v1.0.safetensors?ref=main&nonce=1726186206302 -o 筑梦F.1_INS滤镜_v1.0.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('筑梦F.1_INS滤镜下载完成')
 
 os.makedirs("/home/xlab-app-center/ComfyUI/models/LLM", exist_ok=True) # 目录不存在则自动创建
 os.chdir(f"/home/xlab-app-center/ComfyUI/models/LLM") # 模型仓库，LLM文件夹
-subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/chatglm3-8bit.safetensors?ref=main&nonce=1725936486503 -o chatglm3-8bit.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('chatglm3-8bit下载完成')
-subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/Florence-2-large-PromptGen-v1.5.safetensors?ref=main&nonce=1727138430530 -o Florence-2-large-PromptGen-v1.5.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('Florence-2-large-PromptGen-v1.5下载完成')
+#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/chatglm3-8bit.safetensors?ref=main&nonce=1725936486503 -o chatglm3-8bit.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('chatglm3-8bit下载完成')
+#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/Florence-2-large-PromptGen-v1.5.safetensors?ref=main&nonce=1727138430530 -o Florence-2-large-PromptGen-v1.5.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('Florence-2-large-PromptGen-v1.5下载完成')
+
+#——————————ai去水印
+os.chdir(f"/home/xlab-app-center/ComfyUI/models/DiffuEraser")
+#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/CogVideoX_5b_fp8_4em.safetensors?ref=main&nonce=1726813815633 -o CogVideoX_5b_fp8_4em.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('CogVideoX_5b_fp8_4em下载完成')
+
+
 
 
 os.system("ls -al /home/xlab-app-center/ComfyUI")          
