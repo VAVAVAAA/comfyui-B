@@ -97,105 +97,105 @@ os.system(f"git clone https://git.homegu.com/smthemex/ComfyUI_DiffuEraser /home/
 #      'CogVideoX_5b_fun_GGUF_Q4_0.safetensors',
      
 #  ]]
-# lora
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/loras/{file_name}') 
- for file_name in [
-    'pcm_sd15_smallcfg_2step_converted.safetensors'
- ]]
-# vae
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/vae/{file_name}') 
- for file_name in [
-     'ketu_vae_fp16.safetensors', 
-     'flux_vae.safetensors',
-     'CogvideoX-vae.safetensors'
- ]]
-# clip模型
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/clip/{file_name}') 
- for file_name in [
-     'ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors', 
-     'clip_l.safetensors',
-     't5xxl_fp8_e4m3fn.safetensors'
- ]]
-# 视觉识别模型&大语言模型
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/LLM/{file_name}') 
- for file_name in [
-#     'Florence-2-large-PromptGen.safetensors'
- ]]
+# # lora
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/loras/{file_name}') 
+#  for file_name in [
+#     'pcm_sd15_smallcfg_2step_converted.safetensors'
+#  ]]
+# # vae
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/vae/{file_name}') 
+#  for file_name in [
+#      'ketu_vae_fp16.safetensors', 
+#      'flux_vae.safetensors',
+#      'CogvideoX-vae.safetensors'
+#  ]]
+# # clip模型
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/clip/{file_name}') 
+#  for file_name in [
+#      'ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors', 
+#      'clip_l.safetensors',
+#      't5xxl_fp8_e4m3fn.safetensors'
+#  ]]
+# # 视觉识别模型&大语言模型
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/LLM/{file_name}') 
+#  for file_name in [
+# #     'Florence-2-large-PromptGen.safetensors'
+#  ]]
 
 
-# 放大模型
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/upscale_models/{file_name}') 
- for file_name in [
-     '4xNomos8kSCHAT-L.pth', 
-     'RealESRGAN_x4plus.pth',
-     '4x_NMKD-Siax_200k.pth'
- ]]
+# # 放大模型
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/upscale_models/{file_name}') 
+#  for file_name in [
+#      '4xNomos8kSCHAT-L.pth', 
+#      'RealESRGAN_x4plus.pth',
+#      '4x_NMKD-Siax_200k.pth'
+#  ]]
 
-# SAM检测加载器
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/sams/{file_name}') 
- for file_name in [
-     'sam_vit_b_01ec64.pth'
- ]]
+# # SAM检测加载器
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/sams/{file_name}') 
+#  for file_name in [
+#      'sam_vit_b_01ec64.pth'
+#  ]]
 
-# SAM2检测加载器
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/sam2/{file_name}') 
- for file_name in [
-     'sam2_hiera_base_plus.safetensors'
- ]]
+# # SAM2检测加载器
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/sam2/{file_name}') 
+#  for file_name in [
+#      'sam2_hiera_base_plus.safetensors'
+#  ]]
 
-# bbox检测面部模型
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/ultralytics/bbox/{file_name}') 
- for file_name in [
-     'face_yolov8m.pt'
- ]]
-# controlnet
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/controlnet/{file_name}') 
- for file_name in [
-     'diffusion_pytorch_model.safetensors'
- ]]
+# # bbox检测面部模型
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/ultralytics/bbox/{file_name}') 
+#  for file_name in [
+#      'face_yolov8m.pt'
+#  ]]
+# # controlnet
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/controlnet/{file_name}') 
+#  for file_name in [
+#      'diffusion_pytorch_model.safetensors'
+#  ]]
 
-# 数据集2-controlnet
-[download(dataset_repo='mofashi/comfy2', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/controlnet/{file_name}') 
- for file_name in [
-     'FLUX-dev-Controlnet-Inpainting-Alpha.safetensors'
- ]]
-# 数据集2- lora
-[download(dataset_repo='mofashi/comfy2', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/loras/{file_name}') 
- for file_name in [
-     'Flux-小红书真实写真.safetensors',
-     '山水诗行_flux版',
-     '极氪白白酱Flux-人像V6MAX'
- ]]
+# # 数据集2-controlnet
+# [download(dataset_repo='mofashi/comfy2', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/controlnet/{file_name}') 
+#  for file_name in [
+#      'FLUX-dev-Controlnet-Inpainting-Alpha.safetensors'
+#  ]]
+# # 数据集2- lora
+# [download(dataset_repo='mofashi/comfy2', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/loras/{file_name}') 
+#  for file_name in [
+#      'Flux-小红书真实写真.safetensors',
+#      '山水诗行_flux版',
+#      '极氪白白酱Flux-人像V6MAX'
+#  ]]
 
-# id换脸模型
-[download(dataset_repo='mofashi/comfy', 
-          source_path=file_name, 
-          target_path=f'/home/xlab-app-center/ComfyUI/models/instantid/{file_name}') 
- for file_name in [
-     'ip-adapter.bin'
- ]]
+# # id换脸模型
+# [download(dataset_repo='mofashi/comfy', 
+#           source_path=file_name, 
+#           target_path=f'/home/xlab-app-center/ComfyUI/models/instantid/{file_name}') 
+#  for file_name in [
+#      'ip-adapter.bin'
+#  ]]
 
 # 设置下载链接和目标 ZIP 文件的路径
 url = 'https://cdn-xlab-data.openxlab.org.cn/objects/8e182f14fc6e80b3bfa375b33eb6cff7ee05d8ef7633e738d1c89021dcf0c5c5?Expires=1727759738&OSSAccessKeyId=LTAI5tSqABbitQcgeNNd8dAE&Signature=xfpmiZOgkgb%2FgTU%2Bm%2FxV8Hpkad4%3D&response-content-disposition=attachment%3B%20filename%3D%22antelopev2.zip%22&response-content-type=application%2Foctet-stream'  # 替换为你的 ZIP 文件下载链接
