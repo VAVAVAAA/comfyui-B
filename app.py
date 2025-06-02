@@ -80,6 +80,14 @@ os.system(f"git clone https://git.homegu.com/smthemex/ComfyUI_DiffuEraser /home/
      'MYHuman-墨幽人造人15.safetensors'
  ]]
 
+#ai去水印，lama
+[download(dataset_repo='mofashi/comfy', 
+          source_path=file_name, 
+          target_path=f'/home/xlab-app-center/ComfyUI/models/lama/{file_name}') 
+ for file_name in [
+     'big-lama.pt'
+ ]]
+
 # unet模型
 # [download(dataset_repo='mofashi/comfy', 
 #           source_path=file_name, 
