@@ -231,7 +231,7 @@ os.chdir(f"/home/xlab-app-center/ComfyUI/models/LLM") # 模型仓库，LLM文件
 #subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/Florence-2-large-PromptGen-v1.5.safetensors?ref=main&nonce=1727138430530 -o Florence-2-large-PromptGen-v1.5.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('Florence-2-large-PromptGen-v1.5下载完成')
 
 #——————————ai去水印
-os.chdir(f"/home/xlab-app-center/ComfyUI/models/DiffuEraser")
+#os.chdir(f"/home/xlab-app-center/ComfyUI/models/DiffuEraser")
 #subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/CogVideoX_5b_fp8_4em.safetensors?ref=main&nonce=1726813815633 -o CogVideoX_5b_fp8_4em.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('CogVideoX_5b_fp8_4em下载完成')
 
 
