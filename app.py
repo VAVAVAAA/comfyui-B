@@ -250,5 +250,5 @@ os.chdir(f"/home/xlab-app-center/ComfyUI/models/LLM") # 模型仓库，LLM文件
 
 os.system("ls -al /home/xlab-app-center/ComfyUI")          
 os.chdir(f"/home/xlab-app-center/ComfyUI")# 启动文件（勿动！）
-#os.system(f"python main.py --listen 0.0.0.0 --port 7860 --enable-cors-header")
-os.system(f"python main.py --cpu --listen 0.0.0.0 --port 7860 --enable-cors-header")
+os.system(f"python main.py --listen 0.0.0.0 --port 7860 --enable-cors-header")
+#os.system(f"python main.py --cpu --listen 0.0.0.0 --port 7860 --enable-cors-header")
