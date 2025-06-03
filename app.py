@@ -11,6 +11,7 @@ os.system("pip install torch==2.4.1")
 os.system("pip install --upgrade torchvision")
 os.system("pip install --upgrade packaging")
 os.system("pip install impact.subpack_nodes")
+os.system("pip install comfyui-frontend-package")
 
 os.system("pip install openxlab")
 os.system("pip install -U openxlab")
