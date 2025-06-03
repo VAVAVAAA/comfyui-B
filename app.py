@@ -11,7 +11,7 @@ os.system("pip install torch==2.4.1")
 os.system("pip install --upgrade torchvision")
 os.system("pip install --upgrade packaging")
 os.system("pip install impact.subpack_nodes")
-os.system("pip install comfyui-frontend-package")
+
 
 os.system("pip install openxlab")
 os.system("pip install -U openxlab")
@@ -19,6 +19,8 @@ openxlab.login(ak='xa5ag8yyvwpqkxw839pw', sk='l8njwnadbjgdwxe1zn83olme31xpparlo2
 
 os.chdir("/home/xlab-app-center")
 os.system(f"git clone https://gitcode.com/gh_mirrors/co/ComfyUI")
+
+os.system("pip install comfyui-frontend-package")
 
 # 依赖
 # os.system("pip install aiohttp_sse")
