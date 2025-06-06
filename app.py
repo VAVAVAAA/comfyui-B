@@ -75,7 +75,7 @@ os.system(f"git clone https://github.com/Fannovel16/ComfyUI-Frame-Interpolation 
 os.system(f"git clone https://github.com/smthemex/ComfyUI_DiffuEraser /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI_DiffuEraser") #视频去水印
 os.system(f"git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite")
 os.system(f"git clone https://github.com/chflame163/ComfyUI_LayerStyle_Advance /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI_LayerStyle_Advance")
-
+os.system(f"git clone https://github.com/ShmuelRonen/ComfyUI-VideoUpscale_WithModel /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-VideoUpscale_WithModel")
 
 
 # 大模型
@@ -137,15 +137,15 @@ os.system(f"git clone https://github.com/chflame163/ComfyUI_LayerStyle_Advance /
 #  ]]
 
 
-# # 放大模型
-# [download(dataset_repo='mofashi/comfy', 
-#           source_path=file_name, 
-#           target_path=f'/home/xlab-app-center/ComfyUI/models/upscale_models/{file_name}') 
-#  for file_name in [
-#      '4xNomos8kSCHAT-L.pth', 
-#      'RealESRGAN_x4plus.pth',
-#      '4x_NMKD-Siax_200k.pth'
-#  ]]
+# 放大模型
+[download(dataset_repo='mofashi/comfy', 
+          source_path=file_name, 
+          target_path=f'/home/xlab-app-center/ComfyUI/models/upscale_models/{file_name}') 
+ for file_name in [
+     '4xNomos8kSCHAT-L.pth', 
+     'RealESRGAN_x4plus.pth',
+     '4x_NMKD-Siax_200k.pth'
+ ]]
 
 # # SAM检测加载器
 # [download(dataset_repo='mofashi/comfy', 
