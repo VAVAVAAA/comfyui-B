@@ -83,7 +83,7 @@ os.system(f"git clone https://github.com/ShmuelRonen/ComfyUI-VideoUpscale_WithMo
           source_path=file_name, 
           target_path=f'/home/xlab-app-center/ComfyUI/models/checkpoints/{file_name}') 
  for file_name in [
-     'MYHuman-墨幽人造人15.safetensors'
+     #'MYHuman-墨幽人造人15.safetensors'
  ]]
 
 # ai去水印，lama
@@ -111,23 +111,21 @@ os.system(f"git clone https://github.com/ShmuelRonen/ComfyUI-VideoUpscale_WithMo
 #     'pcm_sd15_smallcfg_2step_converted.safetensors'
 #  ]]
 # # vae
-# [download(dataset_repo='mofashi/comfy', 
-#           source_path=file_name, 
-#           target_path=f'/home/xlab-app-center/ComfyUI/models/vae/{file_name}') 
-#  for file_name in [
-#      'ketu_vae_fp16.safetensors', 
-#      'flux_vae.safetensors',
-#      'CogvideoX-vae.safetensors'
-#  ]]
-# # clip模型
-# [download(dataset_repo='mofashi/comfy', 
-#           source_path=file_name, 
-#           target_path=f'/home/xlab-app-center/ComfyUI/models/clip/{file_name}') 
-#  for file_name in [
-#      'ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors', 
-#      'clip_l.safetensors',
-#      't5xxl_fp8_e4m3fn.safetensors'
-#  ]]
+[download(dataset_repo='mofashi/comfy', 
+          source_path=file_name, 
+          target_path=f'/home/xlab-app-center/ComfyUI/models/vae/{file_name}') 
+ for file_name in [
+     'flux_vae.safetensors'
+ ]]
+# clip模型
+[download(dataset_repo='mofashi/comfy', 
+          source_path=file_name, 
+          target_path=f'/home/xlab-app-center/ComfyUI/models/clip/{file_name}') 
+ for file_name in [
+     #'ViT-L-14-TEXT-detail-improved-hiT-GmP-TE-only-HF.safetensors', 
+     'clip_l.safetensors',
+     't5xxl_fp8_e4m3fn.safetensors'
+ ]]
 # # 视觉识别模型&大语言模型
 # [download(dataset_repo='mofashi/comfy', 
 #           source_path=file_name, 
