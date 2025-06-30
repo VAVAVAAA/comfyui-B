@@ -33,6 +33,7 @@ os.system("pip install accelerate>=0.25.0")
 os.system("pip install blend_modes")
 os.system("pip install diffusers")
 # os.system("pip install insightface")
+os.system("pip install comfy-cli")
 
 # 插件
 os.system(f"git clone https://github.com/ltdrdata/ComfyUI-Manager /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Manager")
@@ -76,6 +77,8 @@ os.system(f"git clone https://github.com/smthemex/ComfyUI_DiffuEraser /home/xlab
 os.system(f"git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite")
 os.system(f"git clone https://github.com/chflame163/ComfyUI_LayerStyle_Advance /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI_LayerStyle_Advance")
 os.system(f"git clone https://github.com/ShmuelRonen/ComfyUI-VideoUpscale_WithModel /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-VideoUpscale_WithModel")
+os.system(f"git clone https://github.com/mit-han-lab/ComfyUI-nunchaku /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-nunchaku") # 双截棍flux加速
+
 
 
 # 大模型
@@ -245,6 +248,7 @@ os.system(f"git clone https://github.com/ShmuelRonen/ComfyUI-VideoUpscale_WithMo
 os.makedirs("/home/xlab-app-center/ComfyUI/models/diffusion_models", exist_ok=True) # 目录不存在则自动创建
 os.chdir(f"/home/xlab-app-center/ComfyUI/models/diffusion_models") # 模型仓库，LLM文件夹
 subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/flux1-dev-kontext_fp8_scaled.safetensors?ref=main&nonce=1750995578624 -o flux1-dev-kontext_fp8_scaled.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('flux1-dev-kontext_fp8_scaled下载完成')
+subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/Lmxyy1999/nunchaku-flux.1-kontext-dev/resolve/master/svdq-int4_r32-flux.1-kontext-dev.safetensors -o svdq-int4_r32-flux.1-kontext-dev.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('svdq-int4_r32-flux.1-kontext-dev下载完成')
 
 
 
