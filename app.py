@@ -35,8 +35,11 @@ os.system("pip install blend_modes")
 os.system("pip install diffusers")
 # os.system("pip install insightface")
 # os.system("pip install comfy-cli")
-# os.system("pip install tomli")
-# os.system("pip install nunchaku==0.3.1")
+os.system("pip install openai")
+os.system("pip install onnxruntime")
+
+
+
 
 
 # 插件
@@ -81,7 +84,7 @@ os.system(f"git clone https://github.com/smthemex/ComfyUI_DiffuEraser /home/xlab
 os.system(f"git clone https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-VideoHelperSuite")
 os.system(f"git clone https://github.com/chflame163/ComfyUI_LayerStyle_Advance /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI_LayerStyle_Advance")
 os.system(f"git clone https://github.com/ShmuelRonen/ComfyUI-VideoUpscale_WithModel /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-VideoUpscale_WithModel")
-#os.system(f"git clone https://github.com/mit-han-lab/ComfyUI-nunchaku /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-nunchaku") # 双截棍flux加速
+os.system(f"git clone https://github.com/kijai/ComfyUI-WanVideoWrapper /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-WanVideoWrapper") # wan2.1视频插件
 
 
 
