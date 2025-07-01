@@ -35,7 +35,7 @@ os.system("pip install diffusers")
 # os.system("pip install insightface")
 os.system("pip install comfy-cli")
 os.system("pip install tomli")
-os.system("pip install nunchaku")
+os.system("pip install nunchaku==0.3.1")
 
 
 # 插件
