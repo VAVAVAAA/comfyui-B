@@ -255,7 +255,17 @@ os.system(f"git clone https://github.com/kijai/ComfyUI-WanVideoWrapper /home/xla
 os.makedirs("/home/xlab-app-center/ComfyUI/models/diffusion_models", exist_ok=True) # 目录不存在则自动创建
 os.chdir(f"/home/xlab-app-center/ComfyUI/models/diffusion_models") # 模型仓库，LLM文件夹
 subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/flux1-dev-kontext_fp8_scaled.safetensors?ref=main&nonce=1750995578624 -o flux1-dev-kontext_fp8_scaled.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('flux1-dev-kontext_fp8_scaled下载完成')
-#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/Lmxyy1999/nunchaku-flux.1-kontext-dev/resolve/master/svdq-int4_r32-flux.1-kontext-dev.safetensors -o svdq-int4_r32-flux.1-kontext-dev.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('svdq-int4_r32-flux.1-kontext-dev下载完成')
+#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://cdn-lfs-cn-1.modelscope.cn/prod/lfs-objects/9f/24/cedf1b9bb81353f72d0dc61ddb6c5b472c40b8063d7390507fd38b578041?filename=Wan14Bi2vFusioniX.safetensors&namespace=AI-ModelScope&repository=Wan14BT2VFusioniX&revision=master&tag=model&auth_key=1751362691-8677f41296ed40c5bbdc0a6384e52336-0-2c948b5f66bd9c4df2eb55be3281a64c -o Wan2.1_14B_i2v_fp8_FusioniX.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('Wan14Bi2vFusioniX下载完成')
+subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/QuantStack/Wan2.1-14B-T2V-FusionX-VACE/resolve/master/Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn.safetensors -o Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn下载完成')
+
+
+os.makedirs("/home/xlab-app-center/ComfyUI/models/text_encoders", exist_ok=True) # 目录不存在则自动创建
+os.chdir(f"/home/xlab-app-center/ComfyUI/models/text_encoders") # 模型仓库，LLM文件夹
+subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/master/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors -o umt5_xxl_fp8_e4m3fn_scaled.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('umt5_xxl_fp8_e4m3fn_scaled下载完成')
+
+
+os.chdir(f"/home/xlab-app-center/ComfyUI/models/vae") # 模型仓库，LLM文件夹
+subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/master/split_files/vae/wan_2.1_vae.safetensors -o wan_2.1_vae.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('wan_2.1_vae下载完成')
 
 
 
