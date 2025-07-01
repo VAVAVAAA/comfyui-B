@@ -34,7 +34,7 @@ os.system("pip install accelerate>=0.25.0")
 os.system("pip install blend_modes")
 os.system("pip install diffusers")
 # os.system("pip install insightface")
-# os.system("pip install comfy-cli")
+os.system("pip install ftfy")
 os.system("pip install openai")
 os.system("pip install onnxruntime")
 
