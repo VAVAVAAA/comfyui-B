@@ -34,6 +34,7 @@ os.system("pip install blend_modes")
 os.system("pip install diffusers")
 # os.system("pip install insightface")
 os.system("pip install comfy-cli")
+os.system("pip install tomli")
 
 # 插件
 os.system(f"git clone https://github.com/ltdrdata/ComfyUI-Manager /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Manager")
