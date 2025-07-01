@@ -261,7 +261,7 @@ subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dn
 
 os.makedirs("/home/xlab-app-center/ComfyUI/models/text_encoders", exist_ok=True) # 目录不存在则自动创建
 os.chdir(f"/home/xlab-app-center/ComfyUI/models/text_encoders") # 模型仓库，LLM文件夹
-subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/master/split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors -o umt5_xxl_fp8_e4m3fn_scaled.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('umt5_xxl_fp8_e4m3fn_scaled下载完成')
+subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/Comfy-Org/Wan_2.1_ComfyUI_repackaged/resolve/master/split_files/text_encoders/umt5_xxl_fp16.safetensors -o umt5_xxl_fp16.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('umt5_xxl_fp16下载完成')
 
 
 os.chdir(f"/home/xlab-app-center/ComfyUI/models/vae") # 模型仓库，LLM文件夹
