@@ -38,7 +38,7 @@ os.system("pip install ftfy")
 os.system("pip install openai")
 os.system("pip install onnxruntime")
 os.system("pip install sageattention")
-
+os.system("pip install color-matcher")
 
 
 
