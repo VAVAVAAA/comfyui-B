@@ -40,6 +40,9 @@ os.system("pip install onnxruntime")
 os.system("pip install sageattention")
 os.system("pip install color-matcher")
 os.system("pip install deepdiff")
+os.system("pip install cpuinfo")
+
+
 
 
 # 插件
