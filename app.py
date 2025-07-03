@@ -63,7 +63,8 @@ os.system(f"git clone https://github.com/ltdrdata/ComfyUI-Impact-Subpack /home/x
 
 # os.system(f"git clone https://github.com/cubiq/ComfyUI_IPAdapter_plus /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI_IPAdapter_plus")
 
-os.system(f"git clone https://github.com/Nourepide/ComfyUI-Allor /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Allor") # 硬件性能检测
+os.system(f"git clone https://github.com/Nourepide/ComfyUI-Allor /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Allor") 
+os.system(f"git clone https://github.com/crystian/ComfyUI-Crystools /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Crystools") # 硬件性能检测
 # os.system(f"git clone https://github.com/StartHua/Comfyui_CXH_joy_caption  /home/xlab-app-center/ComfyUI/custom_nodes/Comfyui_CXH_joy_caption") # 支持多个视觉反推模型
 # os.system(f"git clone https://github.com/miaoshouai/ComfyUI-Miaoshouai-Tagger /home/xlab-app-center/ComfyUI/custom_nodes/ComfyUI-Miaoshouai-Tagger") # 全新的视觉反推模型，显存更小
 
