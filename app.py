@@ -256,7 +256,7 @@ os.makedirs("/home/xlab-app-center/ComfyUI/models/diffusion_models", exist_ok=Tr
 os.chdir(f"/home/xlab-app-center/ComfyUI/models/diffusion_models") # 模型仓库，LLM文件夹
 subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://code.openxlab.org.cn/api/v1/repos/mofashi/comfy/media/flux1-dev-kontext_fp8_scaled.safetensors?ref=main&nonce=1750995578624 -o flux1-dev-kontext_fp8_scaled.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('flux1-dev-kontext_fp8_scaled下载完成')
 subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/AI-ModelScope/Wan14BT2VFusioniX/resolve/master/Wan14Bi2vFusioniX.safetensors -o Wan2.1_14B_i2v_fp8_FusioniX.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('Wan14Bi2vFusioniX下载完成')
-#subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/QuantStack/Wan2.1-14B-T2V-FusionX-VACE/resolve/master/Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn.safetensors -o Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn下载完成')
+subprocess.run("aria2c --console-log-level=error -c -x 16 -s 16 -k 1M --async-dns=false https://modelscope.cn/models/QuantStack/Wan2.1-14B-T2V-FusionX-VACE/resolve/master/Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn.safetensors -o Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn.safetensors",shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL);print('Wan2.1_T2V_14B_FusionX_VACE-FP8_e4m3fn下载完成')
 
 
 os.makedirs("/home/xlab-app-center/ComfyUI/models/text_encoders", exist_ok=True) # 目录不存在则自动创建
