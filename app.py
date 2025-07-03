@@ -39,7 +39,7 @@ os.system("pip install openai")
 os.system("pip install onnxruntime")
 os.system("pip install sageattention")
 os.system("pip install color-matcher")
-
+os.system("pip install deepdiff")
 
 
 # 插件
